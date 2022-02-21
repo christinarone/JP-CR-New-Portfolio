@@ -37,17 +37,7 @@ body {
 	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
 	height: 100%;
-}
-
-h4{
-	color: black;
-}
-
-
-.about-pic {
-	height: 175px;
-	width: 175px;
-	border-radius: 75%;
+   
 }
 
 img {
@@ -75,7 +65,7 @@ h3 {
 
 .background {
 	position: relative;
-	background: url(../images/lucie-morel-DsWjM4iOmyA-unsplash.jpg) rgba(172, 172, 172, 0.4);
+	background: url(../images/default.jpg) rgba(172, 172, 172, 0.4);
 	min-height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -216,6 +206,9 @@ h1 {
 	text-align: center;
 	font-family: var(--ff-title);
 	padding-top: 1em;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1::after {
@@ -237,6 +230,11 @@ h1::after {
 	justify-content: center;
 	align-items: center;
 	gap: 2em;
+}
+
+.content-text-box {
+	padding: 10px;
+	box-shadow: chartreuse;
 }
 
 .content-container p {
@@ -265,10 +263,6 @@ h1::after {
 	border-radius: 0.25em;
 	padding: 0.2em 1em 0.5em;
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 }
 
 footer {
@@ -362,5 +356,9 @@ footer {
 
 	.content-container {
 		flex-direction: row;
+	}
+
+	.content-text-box {
+		width: 80%;
 	}
 }
